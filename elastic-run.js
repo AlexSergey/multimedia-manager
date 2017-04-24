@@ -1,10 +1,13 @@
 const path = require('path');
 const spawn = require('child_process').spawn;
-const configElasticPath = path.join(__dirname, path.normalize('./config/elasticsearch'));
+const configGlobal = require('./config/global');
+console.log(configGlobal);
+const configElasticPath = path.join(__dirname, path.normalize(configGlobal.elasticsearch.config));
 
 try {
     var ls = spawn('elasticsearch', [
-        `-Epath.conf=${configElasticPath}`
+        `-Epath.conf=${configElasticPath}`,
+        `-Ehttp.port=${configGlobal.elasticsearch.port}`
     ]);
 
     ls.stdout.on('data', data => {
