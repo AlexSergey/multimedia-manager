@@ -1,7 +1,7 @@
 const path = require('path');
 const spawn = require('child_process').spawn;
 const configGlobal = require('./config/global');
-console.log(configGlobal);
+
 const configElasticPath = path.join(__dirname, path.normalize(configGlobal.elasticsearch.config));
 
 try {
