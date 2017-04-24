@@ -22,3 +22,4 @@ configs/src/*.local.js
 configs/build/*
 reports/*
 upload_files/*
+data/

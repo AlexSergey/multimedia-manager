@@ -1,0 +1,1 @@
+export const GET_PHOTOS = (payload) => ({type: 'GET_PHOTOS', payload});
