@@ -20,5 +20,9 @@
     "iconv-lite": "^0.4.15",
     "palette": "^0.1.1",
     "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "babel-preset-node7": "^1.5.0",
+    "babel-register": "^6.24.1"
   }
 }
